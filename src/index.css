@@ -1,13 +1,132 @@
+/* @font-face {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Medium.otf");
+}
+
+@font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Regular.otf");
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Bold.otf");
+}
+
+@font-face {
+  font-family: "Poppins ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-ExstraBold.otf");
+}
+
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Light.otf");
+}
+
+@font-face {
+  font-family: "Poppins Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Thin.otf");
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap');
+:root {
+  --light-blue : #04C3FF;
+  --light-blue-shadow: rgb(69 211 255 / 27%);
+  --sea-green: #0ABEAD;
+  --sea-green-dark: #0CBFAE;
+  --sea-green-extra-dark: #09BEAD;
+  --sea-green-shadow: rgba(11, 190, 173,0.4);
+  --header-hamburger-background : rgba(11, 190, 173,0.8);
+  --orange: #F57F17;
+  --dark-orange:  #FF5823;
+  --orange-shadow: rgba(245, 127, 23,0.2);
+  --white: #fff;
+  --black: #333333;
+  --disabled-btn: #09bead7a;
+  --error-message: #e44f4fd1;
+  --toast-error: #e44f4fd1;
+  --toast-shadow: #9c9c9ce3;
+  --toast-success: #0cBFAE;
+  --loader-color: #0CBFAE;
+  --ff: 'Roboto';
+}
+* {
+  outline: none;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-y: overlay;
+  font-family: var(--ff);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Couries New",
+  monospace;
 }
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 14px 0;
+  width: 160px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Popins SemiBold";
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.primary-btn {
+  color: var(--white);
+  border: 2px solid linen;
+  font-size: 14px;
+  background-color: #1f2235;
+}
+
+.primary-btn:hover {
+  color: aliceblue;
+  border: 2px solid #ff5823;
+  background-color: #1f2235;
+}
+
+.highlighted-btn {
+  color: var(--white);
+  font-size: 14px;
+  background-color: #ff5823;
+}
+
+/* @media only screen and (max-width: 568px) {
+  .highlighted-btn {
+    z-index: -900;
+  }
+}
+
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
+ */
